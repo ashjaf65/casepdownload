@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="../CSS/homepage.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Limelight&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Lobster&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+        <meta charset="UTF-8">
+        <meta name="description" content="Extended Project Website">
+        <title>CAS Extended Project</title>
+    </head>
+    <body>
+        <h1 class="homepageheader">Short Stories by Grandpa Han</h1>
+        <h2 class="homepagesub">CAS Extended Project</h2>
+        <!-- testing comment -->
+        <header>
+            <nav>
+                <div class="navmenu">
+                <a href="index.html" class="homelink" id=>Home Page</a>
+                <a href="Story1.html" class="homelink">First Story</a>
+                <a href="Story2.html" class="homelink">Second Story</a>
+                <a href="Story3.html" class="homelink">Third Story</a>
+                <a href="Story4.html" class="homelink">Fourth Story</a>
+                <a href="Story5.html" class="homelink">Fifth Story</a>
+                <a href="Story6.html" class="homelink">Sixth Story</a>
+                <a href="Story7.html" class="homelink">Seventh Story</a>
+                <a href="Story8.html" class="homelink">Eighth Story</a>
+                <a href="Story9.html" class="homelink">Ninth Story</a>
+                <a href="Story10.html" class="homelink">Tenth Story</a>
+                <a href="Story11.html" class="homelink">Eleventh Story</a>
+                </div>  
+        <hr/>
+            </nav>
+        </header>
+        <main>
+            <img src="http://static1.squarespace.com/static/53cbed3de4b0c984e431b64d/53cd5808e4b0d40dcfea4855/593d549be4fcb5a7cbb206cc/1497193358774/open-book.jpg?format=1500w" alt="Image Not Loaded, Please Check Your Browser" class="bookimage"/>
+            <p class=firstdescription>We've translated original stories written in Mandarin to English. The website, and the translation, are both done by us. There are 11 stories available. Enjoy!</p>
+            <article class="mainarticle">
+                <section>
+                    <h3>Story One: Insert Title</h3>
+                    <p>Type story description/summary here</p>
+                </section>
+                <section>
+                    <h3>Story Two: Insert Title</h3>
+                    <p>Type story description/summary here</p>
+                </section>
+                <section>
+                    <h3>Story Three: Insert Title</h3>
+                    <p>Type story description/summary here</p>
+                </section>
+                <section>
+                    <h3>Story Four: Insert Title</h3>
+                    <p>Type story description/summary here</p>
+                </section>
+                <section>
+                    <h3>Story Five: Insert Title</h3>
+                    <p>Type story description/summary here</p>
+                </section>
+                <section>
+                    <h3>Story Six: Insert Title</h3>
+                    <p>Type story description/summary here</p>
+                </section>
+                <section>
+                    <h3>Story Seven: Insert Title</h3>
+                    <p>Type story description/summary here</p>
+                </section>
+                <section>
+                    <h3>Story Eight: Insert Title</h3>
+                    <p>Type story description/summary here</p>
+                </section>
+                <section>
+                    <h3>Story Nine: Insert Title</h3>
+                    <p>Type story description/summary here</p>
+                </section>
+                <section>
+                    <h3>Story Eleven: Insert Title</h3>
+                    <p>Type story description/summary here</p>
+                </section>
+                <section>
+                    <h3>Story Eleven: Insert Title</h3>
+                    <p>Type story description/summary here</p>
+                </section>
+            </article>
+        </main>
+        <footer>
+            <p class="footerthanks">Thanks for reading!</p>
+        </footer>
+    </body>
+</html>
+
+<div id="respond">
+
+    <h3>Leave a Comment</h3>
+  
+    <form action="post_comment.php" method="post" id="commentform">
+  
+      <label for="comment_author" class="required">Your name</label>
+      <input type="text" name="comment_author" id="comment_author" value="" tabindex="1" required="required">
+  
+      <label for="comment" class="required">Your message</label>
+      <textarea name="comment" id="comment" rows="10" tabindex="4"  required="required"></textarea>
+  
+      <-- comment_post_ID value hard-coded as 1 -->
+      <input type="hidden" name="comment_post_ID" value="1" id="comment_post_ID" />
+      <input name="submit" type="submit" value="Submit comment" />
+      <input type="hidden" name="comment_post_ID" value="<?php echo($comment_post_ID); ?>" id="comment_post_ID" />
+    </form>
+
+    <ol id="posts-list" class="hfeed<?php echo($has_comments?' has-comments':’); ?>">
+        <li class="no-comments">Be the first to add a comment.</li>
+        <?php
+          foreach ($comments as $comment) {
+            ?>
+            <li><article id="comment_<?php echo($comment['id']); ?>" class="hentry">
+              <footer class="post-info">
+                <abbr class="published" title="<?php echo($comment['date']); ?>">
+                  <?php echo( date('d F Y', strtotime($comment['date']) ) ); ?>
+                </abbr>
+      
+                <address class="vcard author">
+                  By <a class="url fn" href="#"><?php echo($comment['comment_author']); ?></a>
+                </address>
+              </footer>
+      
+              <div class="entry-content">
+                <p><?php echo($comment['comment']); ?></p>
+              </div>
+            </article></li>
+            <?php
+          }
+        ?>
+      </ol>
+
+  </div>
