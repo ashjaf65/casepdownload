@@ -1,10 +1,13 @@
 body {
-    background: white;
+    background: url(https://i.pinimg.com/originals/16/6b/0c/166b0c5b64ffb3121f3505b714b3ef88.jpg);
     font-family: 'Limelight', sans-serif;
+    color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .homepageheader {
-    color: black;
+    color: white;
     font-family: 'Limelight', sans-serif;
     font-size: 50px;
     margin: 0px;
@@ -13,45 +16,48 @@ body {
 }
 
 li:first-child {
-    color: black;
+    color: white;
 }
 li:nth-child(2) {
-    color: black;
+    color: white;
 }
 
 a:link {
     font-family: 'Limelight', cursive;
-    color: black;
+    color: white;
 }
     a:hover {
-        color: white;
+        color: rgb(79, 135, 238);
     }
 a:visited {
     font-family: 'Limelight', cursive;
-    color: black;
+    color: #618685;
 }
     a:hover {
-        color: white;
+        color: rgb(79, 135, 238);
     }
 .homelink {text-decoration: none;}
 
 .navmenu {
     width: 100%;
     overflow: auto;
-    background: rgb(179, 177, 171);
+    background: rgb(5, 34, 66);
 }
 
 .navmenu a {
     float: left;
     padding: 12px;
     font-size: 17px;
-    width: 6%;
+    width: 20%;
     text-align: center;
 }
 
 .firstdescription {
     text-align: center;
     font-size: 30px;
+    border-color: white;
+    border-width: 10px;
+    border-style: solid;
 }
 
 .bookimage {
@@ -59,10 +65,13 @@ a:visited {
     margin-left: auto;
     margin-right: auto;
     width: 95%;
+    border-style: solid;
+    border-color: black;
+    border-width: 10px;
 }
 
 .mainarticle {
-    font-family: 'Fjalla One', sans-serif;
+    font-family: 'Mate SC', sans-serif;
 }
 
 .footerthanks {
@@ -73,56 +82,38 @@ a:visited {
 
 .homepagesub {
     font-family: 'Limelight', sans-serif;
-    color: black;
+    color: white;
     margin-left: 30px;
 }
 
 p {
-    color: black;
+    color: white;
 }
 
 h3 {
-    color: black;
+    color: white;
 }
 
-.clean {
-    width: 200px;
-    height: 100px;
-    float: right;
-    margin-right: 0;
-    margin-left: 0;
-    margin-top: 0;
-    margin-bottom: 0;
-    margin: 0;
+.sectionone {
+    text-align: center;
 }
 
-.comment {
-    width: 200px;
-    height: 100px;
+.sectiontwo {
+    text-align: center;
 }
 
-#respond {
-    margin-top: 40px;
-  }
-  
-  #respond input[type='text'],
-  #respond input[type='email'],
-  #respond textarea {
-    margin-bottom: 10px;
-    display: block;
-    width: 100%;
-  
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -o-border-radius: 5px;
-    -ms-border-radius: 5px;
-    -khtml-border-radius: 5px;
-    border-radius: 5px;
-  
-    line-height: 1.4em;
-  }
+section {
+    text-align: center;
+}
 
-  #posts-list.has-comments li.no-comments {
-    display: none;
-  }
+.line {
+    border-color: white;
+    border-width: 3px;
+    border-style: solid;
+}
+
+hr {
+    border-color: white;
+    border-width: 3px;
+    border-style: solid;
+}

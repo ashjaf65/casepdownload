@@ -1,3 +1,47 @@
 body {
-    background: rgb(255, 217, 0);
+    background: rgb(20, 45, 99);
+}
+
+.rose {
+    border-color: black;
+    border-width: 10px;
+    border-style: solid;
+}
+
+#rosewiththorns {
+    color: white;
+    font-family: 'Mate SC', sans-serif;
+}
+
+h3 {
+    color: white;
+}
+
+a:link {
+    font-family: 'Limelight', cursive;
+    color: white;
+}
+    a:hover {
+        color: rgb(20, 45, 99);
+    }
+a:visited {
+    font-family: 'Limelight', cursive;
+    color: #618685;
+}
+    a:hover {
+        color: rgb(20, 45, 99);
+    }
+
+.navmenutwo {
+    width: 100%;
+    overflow: auto;
+    background: rgb(5, 34, 66);
+}
+
+.navmenutwo a {
+    float: left;
+    padding: 12px;
+    font-size: 17px;
+    width: 6%;
+    text-align: center;
 }
