@@ -1,18 +1,19 @@
 body {
-    background: rgb(20, 45, 99);
+    background: url(https://i.pinimg.com/originals/16/6b/0c/166b0c5b64ffb3121f3505b714b3ef88.jpg);
+    font-family: 'Limelight', sans-serif;
+    color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
-
 .rose {
     border-color: black;
     border-width: 10px;
     border-style: solid;
 }
 
-#whatamigoingtodo {
+#mainstory {
     color: white;
     font-family: 'Mate SC', sans-serif;
-    
-
 }
 
 h3 {
@@ -28,22 +29,22 @@ a:link {
     }
 a:visited {
     font-family: 'Limelight', cursive;
-    color: orange;
+    color: #618685;
 }
     a:hover {
         color: rgb(20, 45, 99);
     }
 
-.navmenuone {
+.navmenu {
     width: 100%;
     overflow: auto;
     background: rgb(5, 34, 66);
 }
 
-.navmenuone a {
+.navmenu a {
     float: left;
     padding: 12px;
     font-size: 17px;
-    width: 6%;
+    width: 20%;
     text-align: center;
 }

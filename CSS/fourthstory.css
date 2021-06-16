@@ -1,5 +1,9 @@
 body {
-    background: rgb(20, 45, 99);
+    background: url(https://i.pinimg.com/originals/16/6b/0c/166b0c5b64ffb3121f3505b714b3ef88.jpg);
+    font-family: 'Limelight', sans-serif;
+    color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .rose {
@@ -32,16 +36,21 @@ a:visited {
         color: rgb(20, 45, 99);
     }
 
-.navmenutwo {
+.navmenu {
     width: 100%;
     overflow: auto;
     background: rgb(5, 34, 66);
 }
 
-.navmenutwo a {
+.navmenu a {
     float: left;
     padding: 12px;
     font-size: 17px;
-    width: 6%;
+    width: 20%;
     text-align: center;
+}
+
+#mainstory {
+    color: white;
+    font-family: 'Mate SC', sans-serif;
 }
